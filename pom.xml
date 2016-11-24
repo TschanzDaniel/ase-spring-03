@@ -15,4 +15,11 @@
   <scm>
   	<url>https://github.engineering.zhaw.ch/bacn/ase-spring-03</url>
   </scm>
+  <modules>
+  	<module>31-AOP-Auto</module>
+  	<module>31-AOP-Auto1</module>
+  	<module>31-AOP-Pointcut</module>
+  	<module>33-AOP-JoinPoints</module>
+  	<module>34-AOP-Introduction</module>
+  </modules>
 </project>
