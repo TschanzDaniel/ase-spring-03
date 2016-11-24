@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.spring.samples</groupId>
-  <artifactId>02-AOP</artifactId>
+  <artifactId>03-AOP</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -12,4 +12,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <scm>
+  	<url>https://github.engineering.zhaw.ch/bacn/ase-spring-03</url>
+  </scm>
 </project>
