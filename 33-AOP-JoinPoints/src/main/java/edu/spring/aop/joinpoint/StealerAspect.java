@@ -19,17 +19,17 @@ public class StealerAspect {
     ApplicationContext context;
 
     @Autowired
-    BankAccount schweizerNummernKonto;
+    BankAccount nummernKonto;
 
     @Around("execution(* edu.spring..*.BankAccount.insertMoney(..))")
     public Object stealMoney(ProceedingJoinPoint joinPoint) throws Throwable {
-        if (joinPoint.getTarget().equals(schweizerNummernKonto)) {
+        if (joinPoint.getTarget().equals(nummernKonto)) {
         	return joinPoint.proceed();
         }
         double amount = (Double)joinPoint.getArgs()[0];
 
         System.out.println("Klaue " + amount + "€");
-        schweizerNummernKonto.insertMoney(amount);
+        nummernKonto.insertMoney(amount);
 
         //joinPoint.proceed();
         return true;
