@@ -5,7 +5,7 @@
     <artifactId>03-AOP</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>31-AOP-Pointcut</artifactId>
+  <artifactId>32-AOP-Pointcut</artifactId>
   <name>32-AOP-Pointcut</name>
   <description>32-AOP-Pointcut</description>
 	<properties>
@@ -15,7 +15,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- Spring -->
-		<spring-framework.version>4.3.2.RELEASE</spring-framework.version>
+		<spring-framework.version>5.2.7.RELEASE</spring-framework.version>
 
 		<!-- AspectJ -->
 		<aspectj.version>1.8.2</aspectj.version>
@@ -73,21 +73,12 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<version>2.5.1</version>
+				<version>3.8.1</version>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
-					<additionalBuildcommands>
-						<buildCommand>
-							<name>org.springframework.ide.eclipse.core.springbuilder</name>
-						</buildCommand>
-					</additionalBuildcommands>
-					<additionalProjectnatures>
-						<projectnature>
-							org.springframework.ide.eclipse.core.springnature
-						</projectnature>
-					</additionalProjectnatures>
+
 				</configuration>
 			</plugin>
 			<plugin>
