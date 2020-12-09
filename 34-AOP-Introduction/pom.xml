@@ -15,14 +15,14 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- Spring -->
-		<spring-framework.version>4.3.2.RELEASE</spring-framework.version>
+		<spring-framework.version>5.2.7.RELEASE</spring-framework.version>
 
 		<!-- AspectJ -->
-		<aspectj.version>1.8.2</aspectj.version>
+		<aspectj.version>1.9.6</aspectj.version>
 
 
 		<!-- Test -->
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13</junit.version>
 	</properties>
 
 	<dependencies>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.3.2.RELEASE</version>
+			<version>${spring-framework.version}</version>
 		</dependency>
 
 		<!-- Spring and Transactions -->
@@ -73,7 +73,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<version>2.5.1</version>
+				<version>3.8.1</version>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<source>${java.version}</source>
@@ -93,7 +93,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.15</version>
+				<version>3.0.0-M5</version>
 				<configuration>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 				</configuration>

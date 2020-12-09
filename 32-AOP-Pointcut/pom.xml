@@ -18,7 +18,7 @@
 		<spring-framework.version>5.2.7.RELEASE</spring-framework.version>
 
 		<!-- AspectJ -->
-		<aspectj.version>1.8.2</aspectj.version>
+		<aspectj.version>1.9.6</aspectj.version>
 
 
 		<!-- Test -->
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.3.2.RELEASE</version>
+			<version>${spring-framework.version}</version>
 		</dependency>
 
 		<!-- Spring and Transactions -->
@@ -84,7 +84,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.15</version>
+				<version>3.0.0-M5</version>
 				<configuration>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 				</configuration>
